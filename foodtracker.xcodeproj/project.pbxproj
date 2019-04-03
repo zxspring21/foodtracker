@@ -15,6 +15,7 @@
 		514F7725219A854700626877 /* foodtrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514F7724219A854700626877 /* foodtrackerTests.swift */; };
 		514F7730219A854700626877 /* foodtrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514F772F219A854700626877 /* foodtrackerUITests.swift */; };
 		5186A07E225206BE0053DB65 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186A07D225206BE0053DB65 /* RatingControl.swift */; };
+		51BA3B532254B75B003EF81D /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA3B522254B75B003EF81D /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		514F772F219A854700626877 /* foodtrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodtrackerUITests.swift; sourceTree = "<group>"; };
 		514F7731219A854700626877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5186A07D225206BE0053DB65 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		51BA3B522254B75B003EF81D /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		514F7703219A854500626877 = {
 			isa = PBXGroup;
 			children = (
+				51BA3B522254B75B003EF81D /* Meal.swift */,
 				514F770E219A854500626877 /* foodtracker */,
 				514F7723219A854700626877 /* foodtrackerTests */,
 				514F772E219A854700626877 /* foodtrackerUITests */,
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BA3B532254B75B003EF81D /* Meal.swift in Sources */,
 				514F7712219A854500626877 /* ViewController.swift in Sources */,
 				5186A07E225206BE0053DB65 /* RatingControl.swift in Sources */,
 				514F7710219A854500626877 /* AppDelegate.swift in Sources */,
