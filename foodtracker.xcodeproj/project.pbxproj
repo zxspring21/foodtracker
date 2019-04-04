@@ -81,7 +81,6 @@
 		514F7703219A854500626877 = {
 			isa = PBXGroup;
 			children = (
-				51BA3B522254B75B003EF81D /* Meal.swift */,
 				514F770E219A854500626877 /* foodtracker */,
 				514F7723219A854700626877 /* foodtrackerTests */,
 				514F772E219A854700626877 /* foodtrackerUITests */,
@@ -105,6 +104,7 @@
 				514F770F219A854500626877 /* AppDelegate.swift */,
 				514F7711219A854500626877 /* ViewController.swift */,
 				5186A07D225206BE0053DB65 /* RatingControl.swift */,
+				51BA3B522254B75B003EF81D /* Meal.swift */,
 				514F7713219A854500626877 /* Main.storyboard */,
 				514F7716219A854700626877 /* Assets.xcassets */,
 				514F7718219A854700626877 /* LaunchScreen.storyboard */,
@@ -203,6 +203,7 @@
 					};
 					514F771F219A854700626877 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 514F770B219A854500626877;
 					};
 					514F772A219A854700626877 = {
@@ -487,7 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Beginning.foodtrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodtracker.app/foodtracker";
 			};
@@ -507,7 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Beginning.foodtrackerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/foodtracker.app/foodtracker";
 			};
