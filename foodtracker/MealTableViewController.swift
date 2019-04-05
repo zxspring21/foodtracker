@@ -99,6 +99,21 @@ class MealTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: Actions
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        // This code uses the optional type cast operator (as?) to try to downcast the segue’s source view controller to a MealViewController instance. You need to downcast because sender.sourceViewController is of type UIViewController, but you need to work with a MealViewController.
+        // If either the downcast fails or the meal property on sourceViewController is nil, the condition evaluates to false and the if statement doesn’t get executed.
+        if let sourceViewController = sender.source as? MealViewController, let meal = sourceViewController.meal {
+            // Add a new meal.
+            let newIndexPath = IndexPath(row: meals.count, section: 0)
+            meals.append(meal)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+        
+        
+    }
+
     //MARK: Private Methods
     
     private func loadSampleMeals() {
