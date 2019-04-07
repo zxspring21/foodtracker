@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class MealTableViewController: UITableViewController {
     // The natural place to track Meal.swift content is in a custom view controller subclass that’s connected to the meal list scene.
@@ -49,7 +50,7 @@ class MealTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.nameLabel.text = meal.name
-        cell.PhotoImageView.image = meal.photo
+        cell.photoImageView.image = meal.photo
         cell.ratingControl.rating = meal.rating
 
         return cell
@@ -90,15 +91,36 @@ class MealTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        switch(segue.identifier ?? "") {
+            case "AddItem":
+                os_log("Adding a new meal.", log: OSLog.default, type: .debug)
+            case "ShowDetail":
+                guard let mealDetailViewController = segue.destination as? MealViewController else {
+                    fatalError("Unexpected destination: \(segue.destination)")
+                }
+                
+                guard let selectedMealCell = sender as? MealTableViewCell else {
+                    fatalError("Unexpected sender: \(sender)")
+                }
+                
+                guard let indexPath = tableView.indexPath(for: selectedMealCell) else {
+                    fatalError("The selected cell is not being displayed by the table")
+                }
+            
+                let selectedMeal = meals[indexPath.row]
+                mealDetailViewController.meal = selectedMeal
+            default:
+                fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+            
+        }
     }
-    */
+    
     
     //MARK: Actions
     @IBAction func unwindToMealList(sender: UIStoryboardSegue) {

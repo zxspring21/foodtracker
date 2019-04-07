@@ -14,7 +14,7 @@ class MealTableViewCell: UITableViewCell {
     
     // MARK: Properties:
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var PhotoImageView: UIImageView!
+    @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
     override func awakeFromNib() {
