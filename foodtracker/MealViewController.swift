@@ -16,6 +16,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    //Now, when users tap the Save button, they navigate back to the meal list scene, during which process the unwindToMealList(sender:) action method is called.
     
     /*
      This value is either passed by `MealTableViewController` in `prepare(for:sender:)`
@@ -72,6 +73,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
+    
     
     // This method lets you configure a view controller before it's presented.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
