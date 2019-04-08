@@ -4,8 +4,18 @@ This article intergrating `GitHub Flavored Markdown(GFM)` for iOS beginner to un
 ### E-mail: portran@g.ncu.edu.tw
 **** 
 
-## 目錄
+## Exhibition
+*Result Interface
+<img src="/foodtracker/Assets.xcassets/Screen Shot/Result.imageset/Result.png">
+*Edit Interface
+<img src="/foodtracker/Assets.xcassets/Screen Shot/Edit.imageset/Edit.png">
+*Cancel&Save Interface
+<img src="/foodtracker/Assets.xcassets/Screen Shot/Cancel&Save.imageset/Cancel&Save.png">
+*Add Interface
+<img src="/foodtracker/Assets.xcassets/Screen Shot/Add.imageset/Add.png">
 
+
+## 目錄
 * [Getting Started](#Getting Started)
 * [Building the UI](#Building the UI)
 * [Working with Table Views](#Working with Table Views)
