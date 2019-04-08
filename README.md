@@ -16,23 +16,23 @@ This article intergrating `GitHub Flavored Markdown(GFM)` for iOS beginner to un
 
 
 ## 目錄
-* [Getting Started](#Getting Started)
-* [Building the UI](#Building the UI)
-* [Working with Table Views](#Working with Table Views)
-* [What's next?](#What's next?)
+* [Getting Started](#Getting_Started)
+* [Building the UI](#Building_the_UI)
+* [Working with Table Views](#Working_with_Table_Views)
+* [What's next?](#What's_next?)
 
 
-# Getting Started
+<h2 id="Getting_Started">Getting Started</h2>
 * Jump right in
 
-# Building the UI
+<h2 id="Building_the_UI">Building the UI</h2>
 * Build a basic UI
 * Connect the UI to code
 * Work with View Controllers
 * Implement a custom control
 * Define a data model
 
-# Working with Table Views
+<h2 id="Working_with_Table_Views">Working with Table Views</h2>
 * Create a Table View
 * Implement a Navigation
 * Implement Edit and Delete Behavior
