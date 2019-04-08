@@ -92,11 +92,11 @@ This article intergrating `GitHub Flavored Markdown(GFM)` for iOS beginner to un
   * Understand the difference between static properties and instance properties
   * Use the NSCoding protocol to read and write data
 
-# What's next?
+## What's next?
 * Where to Go from Here
 
-# iOS and Swift Terminology
+## iOS and Swift Terminology
 * Glossary
 
-# Revision History
+## Revision History
 * Document Revision History
